@@ -1,0 +1,188 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    position: relative;
+}
+
+.nav-text-style{
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.nav-text-style:hover{
+    color: rgba(255, 255, 255, 1);
+    text-decoration: none;
+}
+
+/****SIDEBAR****/
+
+.sidebar{
+    width: 100px;
+    height: calc(100vh - 80px);
+    background-color: #181601;
+    /* display: inline-block; */
+    position: fixed;
+    padding-top: 25px;
+}
+
+.logo-container{
+    width: 40px;
+    height: 35px;
+    background-image:url("https://storage.googleapis.com/pr-newsroom-wp/1/2018/11/Spotify_Logo_RGB_White.png");
+    background-size: cover;
+    margin: 0 auto;
+}
+
+.logo-container:hover{
+    cursor: pointer;
+}
+
+.nav-side{
+    /* background-color: blue; */
+    padding: 20px 0;
+}
+
+.nav-side-menu-items{
+    /* background-color: lightblue; */
+    color: rgba(255, 255, 255, 0.5);
+    padding: 5px 0;
+}
+
+.nav-side-menu-items:hover{
+    border-left: 5px solid #26d362;
+    color: rgba(255, 255, 255, 1);
+    cursor: pointer;
+}
+
+.nav-side i{
+    padding: 0 40px;
+    transform: scale(2);
+}
+
+.nav-side-menu-items>a{
+    visibility: hidden;
+}
+
+.recenti{
+    padding: 20px 15px;
+    visibility: hidden;
+}
+
+.recenti>a{
+    padding: 5px 0;
+}
+
+.install-account{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.install-account>div{
+    padding: 5px 0;
+    margin: 0 10px;
+}
+.install-app{
+    border-bottom: 2px solid gray;
+    color: rgba(255, 255, 255, 0.5);
+}
+.install-app:hover{
+    color: rgba(255, 255, 255, 1);
+    cursor: pointer;
+}
+
+.install-account i{
+        padding: 0 40px;
+        transform: scale(2);
+        position: relative;
+        right: 8px;
+        top: 7px;
+}
+
+.install-account a{
+    visibility: hidden;
+}
+
+.account>a,
+.account{
+    color: rgba(255, 255, 255, 1);
+}
+
+.account:hover{
+    cursor: pointer;
+}
+
+/****PLAYER****/
+
+.player{
+    width: 100%;
+    height: 80px;
+    background-color: #282828;
+    position: absolute;
+    top: calc(100vh - 80px);
+    left:0;
+    position: fixed;
+}
+
+
+/********************************/
+/**********MEDIA QUERY***********/
+/********************************/
+
+
+/*SMALL*/     /***TABLET***/
+@media all and (min-width: 576px){
+
+    /****SIDEBAR****/
+
+    .sidebar{
+        width: 200px;
+        display: block;
+    }
+
+    .logo-container{
+        width: 115px;
+        background-size: contain;
+        margin-left: 35px;
+    }
+
+    .recenti{
+        visibility: visible;
+    }
+    .install-account a,
+    .nav-side-menu-items>a{
+        visibility: visible;
+    }
+
+    .install-account i,
+    .nav-side i{
+        padding: 0 15px;
+        transform: scale(1);
+    }
+
+    .install-account i{
+            position: static;
+    }
+
+}
+
+/*MEDIUM*/
+@media all and (min-width: 768px) {
+
+}
+
+/*LARGE*/    /***DESKTOP***/
+@media all and (min-width: 992px){
+
+    /****SIDEBAR****/
+}
+
+/*VERY LARGE*/
+@media all and (min-width: 1200px){
+
+}
