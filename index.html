@@ -9,28 +9,30 @@
     </head>
     <body>
         <section class="sidebar">
-            <div class="logo-container">
+            <div class="top-sidebar">
+                <div class="logo-container">
+                </div>
+                <div class="nav-side">
+                    <div class="nav-side-menu-items">
+                        <i class="fas fa-search"></i>
+                        <a class="nav-text-style text-capitalize" href="#">cerca</a>
+                    </div>
+                    <div class="nav-side-menu-items">
+                        <i class="fas fa-home"></i>
+                        <a class="nav-text-style text-capitalize" href="#">home</a>
+                    </div>
+                    <div class="nav-side-menu-items">
+                        <i class="fas fa-book"></i>
+                        <a class="nav-text-style text-capitalize" href="#">la tua libreria</a>
+                    </div>
+                    <div class="recenti">
+                        <a class="nav-text-style text-uppercase d-block pb-2" href="#">ascoltati di recente</a>
+                        <a class="nav-text-style text-uppercase d-block" href="#">artista</a>
+                        <a class="nav-text-style text-uppercase d-block" href="#">playlist</a>
+                    </div>
+                </div>
             </div>
-            <div class="nav-side">
-                <div class="nav-side-menu-items">
-                    <i class="fas fa-search"></i>
-                    <a class="nav-text-style text-capitalize" href="#">cerca</a>
-                </div>
-                <div class="nav-side-menu-items">
-                    <i class="fas fa-home"></i>
-                    <a class="nav-text-style text-capitalize" href="#">home</a>
-                </div>
-                <div class="nav-side-menu-items">
-                    <i class="fas fa-book"></i>
-                    <a class="nav-text-style text-capitalize" href="#">la tua libreria</a>
-                </div>
-                <div class="recenti">
-                    <a class="nav-text-style text-uppercase" href="#">ascoltati di recente</a>
-                    <a class="nav-text-style text-uppercase d-block" href="#">artista</a>
-                    <a class="nav-text-style text-uppercase d-block" href="#">playlist</a>
-                </div>
-            </div>
-            <div class="install-account">
+            <div class="bottom-sidebar">
                 <div class="install-app">
                     <i class="fas fa-arrow-circle-down"></i>
                     <a class="nav-text-style text-capitalize" href="#">install app</a>
@@ -42,7 +44,7 @@
             </div>
         </section>
         <section class="player">
-            <div class="song-info">
+            <div class="footer-left">
                 <div class="song-info-items">
                     <img src="https://images-na.ssl-images-amazon.com/images/I/51XyTOdXBnL._AC_SX425_.jpg" alt="">
                 </div>
@@ -54,7 +56,7 @@
                     <i class="far fa-heart"></i>
                 </div>
             </div>
-            <div class="play-pause">
+            <div class="footer-center">
                 <div class="play-pause-top">
                     <i class="fas fa-random nav-text-style"></i>
                     <i class="fas fa-step-backward nav-text-style"></i>
@@ -64,11 +66,12 @@
                 </div>
                 <div class="play-pause-bottom">
                     <span class="current-time nav-text-style-half-white">2:38</span>
-                    <span class="progress-bar"></span>
+                    <!-- <span class="progress-bar"></span> -->
+                    <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
                     <span class="total-time nav-text-style-half-white">8:36</span>
                 </div>
             </div>
-            <div class="settings">
+            <div class="footer-right">
                 <div class="burger-menu-player">
                     <span></span>
                     <span></span>
@@ -79,15 +82,42 @@
                 </div>
                 <div class="volume">
                     <i class="fas fa-volume-up nav-text-style-half-white"></i>
-                    <span></span>
+                    <!-- <span></span> -->
+                    <input type="range" min="1" max="100" value="50" class="slider-vol" id="myRange">
                 </div>
             </div>
         </section>
-        <nav>
-
-        </nav>
         <main>
+            <nav>
+                <ul>
+                    <li>
+                        <a class="text-uppercase nav-text-style "href="#">in evidenza</a>
+                    </li>
+                    <li>
+                        <a class="text-uppercase nav-text-style "href="#">podcast</a>
+                    </li>
+                    <li>
+                        <a class="text-uppercase nav-text-style "href="#">classifiche</a>
+                    </li>
+                    <li>
+                        <a class="text-uppercase nav-text-style "href="#">generi e mood</a>
+                    </li>
+                    <li>
+                        <a class="text-uppercase nav-text-style "href="#">nuove uscite</a>
+                    </li>
+                    <li>
+                        <a class="text-uppercase nav-text-style "href="#">scopri</a>
+                    </li>
+                </ul>
+                <div class="burger-menu-nav">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+            <div class="">
 
+            </div>
         </main>
     </body>
 </html>
