@@ -69,6 +69,26 @@ body{
     padding-top: 20px;
 }
 
+.nav-side-menu-items>input{
+    display: none;
+    width: 135px;
+    border-radius: 20px;
+    background-color: rgba(255,255,255,.2);
+    border: none;
+}
+
+.nav-side-menu-items:first-child:hover{
+
+}
+
+.nav-side-menu-items:first-child:hover a{
+    display: none;
+}
+
+.nav-side-menu-items:first-child:hover input{
+    display: inline-block;
+}
+
 .nav-side-menu-items{
     color: rgba(255, 255, 255, 0.5);
     padding-top: 5px;
