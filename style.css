@@ -366,8 +366,8 @@ body{
 }
 
 
-/*****MAIN*****/
-main{
+/*****CONTENITORE*****/
+.contenitore{
     /* width: 100%; */
     height: calc(100vh - 70px);
     margin: 0 auto;
@@ -403,15 +403,15 @@ li::after{
     width: 25px;
     height: 2px;
     background-color: #26d362;
-    /* display: inline-block; */
+    display: inline-block;
     position: relative;
     top: -10px;
-    display: none;
+    visibility: hidden;
 }
 
 li:hover:after{
     border-bottom: solid 2px #26d362;
-    display: inline-block;
+    visibility: visible;
 }
 
 nav>.burger-menu-nav{
@@ -436,6 +436,60 @@ nav>.burger-menu-nav>span{
 .burger-menu-nav:hover{
     cursor: pointer;
 }
+
+/****MAIN***/
+.contenitore{
+    padding-bottom: 500px;
+}
+
+.contenitore h1{
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    padding-top: 35px;
+    padding-bottom: 10px;
+}
+
+main{
+    padding: 0 20px;
+    padding-bottom: 100px;
+}
+
+
+
+.artist-contain{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.artist{
+    width: 140px;
+    /* max-width: 150px;
+    min-width: 50px; */
+    text-align: center;
+    padding: 10px;
+}
+
+.artist:hover{
+    cursor: pointer;
+}
+
+.artist:hover img{
+    transform: scale(1.1);
+}
+
+.artist>img{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.custom,
+.playlist{
+    max-width: 850px;
+    margin: 0 auto;
+}
+
 /********************************/
 /**********MEDIA QUERY***********/
 /********************************/
@@ -474,9 +528,6 @@ nav>.burger-menu-nav>span{
             position: static;
     }
 
-    main{
-        margin-left: 200px;
-    }
 
 
 /***PLAYER***/
@@ -484,6 +535,11 @@ nav>.burger-menu-nav>span{
         display: flex;
         align-items: center;
     }
+
+    .contenitore{
+        margin-left: 200px;
+    }
+
 
 }
 
